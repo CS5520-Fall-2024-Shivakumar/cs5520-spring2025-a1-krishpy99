@@ -1,5 +1,6 @@
 package com.example.theentiremad;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -45,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
                 toast.setView(layout); // Set the custom layout as the view for the Toast
                 toast.show();
 
+            }
+        });
+
+        Button q = findViewById(R.id.button2);
+        q.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                Intent i = new Intent(getApplicationContext(), QuickCalc.class);
+                startActivity(i);
             }
         });
     }

@@ -2,4 +2,25 @@
     <string name="app_name">TheEntireMAD</string>
     <string name="about_button">About Us</string>
     <string name="messageValue">My name is Yadhukrishnan</string>
+    <string name="greeting">Different Greeting!</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num9">9</string>
+    <string name="num0">0</string>
+    <string name="plus">+</string>
+    <string name="x">x</string>
+    <string name="slash">/</string>
+    <string name="minus">-</string>
+    <string name="dot">.</string>
+    <string name="equal">=</string>
+    <string name="default_result"> </string>
+    <string name="clear">CLEAR</string>
+    <string name="quicalc">Quick Calc</string>
 </resources>

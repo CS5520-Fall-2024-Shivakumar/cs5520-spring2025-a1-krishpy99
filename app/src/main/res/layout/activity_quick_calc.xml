@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuickCalc">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/transparent"
+        android:gravity="end|center_vertical"
+        android:padding="16dp"
+        android:text="@string/default_result"
+        android:textSize="32sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/buttonsFlow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="5dp"
+        app:flow_horizontalGap="20dp"
+        app:flow_verticalGap="30dp"
+        app:flow_maxElementsWrap="4"
+        app:flow_wrapMode="aligned"
+        app:flow_horizontalStyle="packed"
+        app:constraint_referenced_ids="button_1,button_2,button_3,button_slash,button_4,button_5,button_6,button_x,button_7,button_8,button_9,button_minus,button_dot,button_0,button_equals,button_plus"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/button_0"
+        style="@style/CalcButton"
+        android:text="@string/num0" />
+
+    <Button
+        android:id="@+id/button_1"
+        style="@style/CalcButton"
+        android:text="@string/num1" />
+
+    <Button
+        android:id="@+id/button_2"
+        style="@style/CalcButton"
+        android:text="@string/num2" />
+
+    <Button
+        android:id="@+id/button_3"
+        style="@style/CalcButton"
+        android:text="@string/num3" />
+
+    <Button
+        android:id="@+id/button_4"
+        style="@style/CalcButton"
+        android:text="@string/num4" />
+
+    <Button
+        android:id="@+id/button_5"
+        style="@style/CalcButton"
+        android:text="@string/num5" />
+
+    <Button
+        android:id="@+id/button_6"
+        style="@style/CalcButton"
+        android:text="@string/num6" />
+
+    <Button
+        android:id="@+id/button_7"
+        style="@style/CalcButton"
+        android:text="@string/num7" />
+
+    <Button
+        android:id="@+id/button_8"
+        style="@style/CalcButton"
+        android:text="@string/num8" />
+
+    <Button
+        android:id="@+id/button_9"
+        style="@style/CalcButton"
+        android:text="@string/num9" />
+
+    <Button
+        android:id="@+id/button_dot"
+        style="@style/CalcButton"
+        android:text="@string/dot" />
+
+    <Button
+        android:id="@+id/button_plus"
+        style="@style/CalcButton"
+        android:text="@string/plus" />
+
+    <Button
+        android:id="@+id/button_minus"
+        style="@style/CalcButton"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/button_x"
+        style="@style/CalcButton"
+        android:text="@string/x" />
+
+    <Button
+        android:id="@+id/button_slash"
+        style="@style/CalcButton"
+        android:text="@string/slash" />
+
+    <Button
+        android:id="@+id/button_equals"
+        style="@style/CalcButton"
+        android:text="@string/equal" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="@dimen/layout_height"
+        android:backgroundTint="@color/black"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsFlow"
+        android:text="@string/clear" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
